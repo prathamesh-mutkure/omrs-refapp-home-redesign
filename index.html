@@ -10,12 +10,146 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+
     <title>OpenMRS Ref App!</title>
+
+    <script src="https://kit.fontawesome.com/bfccdb94e4.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <h1>Hello, world!</h1>
 
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark roundednav">
+
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+            <img src="resources/omrs-logo.jpg" height="75px" width="auto">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Logo -->
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        admin
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">My Account</a>
+                    </div>
+                </li>
+
+                <!-- Location Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Registration Desk
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Impatient Ward</a>
+                        <a class="dropdown-item" href="#">Laboratory</a>
+                        <a class="dropdown-item" href="#">Pharmacy</a>
+                        <a class="dropdown-item" href="#">Isolation Ward</a>
+                        <a class="dropdown-item" href="#">Outpatient Clinic</a>
+                        <a class="dropdown-item" href="#">Registration Desk</a>
+                    </div>
+                </li>
+                <!-- Location Dropdown -->
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Log Out</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Nav Bar -->
+
+    <!-- Cards -->
+    <div class="container cards">
+        
+        <div class="card-deck">
+            <div class="card text-center shadow p-3 mb-5 bg-white rounded">
+                <div class="card-body">
+                    <i class="fas fa-search fa-7x" style="padding: 5%;"></i>
+                    <h5 style="padding: 5%;">Search Patients</h5>
+                </div>
+            </div>
+
+            <div class="card text-center shadow p-3 mb-5 bg-white rounded">
+                <div class="card-body">
+                    <i class="fas fa-search fa-7x" style="padding: 5%;"></i>
+                    <h5 style="padding: 5%;">Active Visits</h5>
+                </div>
+            </div>
+
+            <div class="card text-center shadow p-3 mb-5 bg-white rounded">
+                <div class="card-body">
+                    <i class="fas fa-search fa-7x" style="padding: 5%;"></i>
+                    <h5 style="padding: 5%;">Register a Patient</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-deck">
+            <div class="card text-center shadow p-3 mb-5 bg-white rounded">
+                <div class="card-body">
+                    <i class="fas fa-search fa-7x" style="padding: 5%;"></i>
+                    <h5 style="padding: 5%;">Capture Vitals</h5>
+                </div>
+            </div>
+
+
+            <div class="card text-center shadow p-3 mb-5 bg-white rounded">
+                <div class="card-body">
+                    <i class="fas fa-search fa-7x" style="padding: 5%;"></i>
+                    <h5 style="padding: 5%;">Appointment Schedueling</h5>
+                </div>
+            </div>
+
+            <div class="card text-center shadow p-3 mb-5 bg-white rounded">
+                <div class="card-body">
+                    <i class="fas fa-search fa-7x" style="padding: 5%;"></i>
+                    <h5 style="padding: 5%;">Reports</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-deck">
+            <div class="card text-center shadow p-3 mb-5 bg-white rounded">
+                <div class="card-body">
+                    <i class="fas fa-search fa-7x" style="padding: 5%;"></i>
+                    <h5 style="padding: 5%;">Data Management</h5>
+                </div>
+            </div>
+
+            <div class="card text-center shadow p-3 mb-5 bg-white rounded">
+                <div class="card-body">
+                    <i class="fas fa-search fa-7x" style="padding: 5%;"></i>
+                    <h5 style="padding: 5%;">Configure Metadata</h5>
+                </div>
+            </div>
+
+            <div class="card text-center shadow p-3 mb-5 bg-white rounded">
+                <div class="card-body">
+                    <i class="fas fa-search fa-7x" style="padding: 5%;"></i>
+                    <h5 style="padding: 5%;">System Administration</h5>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Cards -->
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

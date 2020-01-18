@@ -1,0 +1,9 @@
+.roundednav {
+    margin: 10px;
+    border-radius: 7px;
+}
+
+.cards {
+    max-width: 70%;
+    margin-top: 100px;
+}
