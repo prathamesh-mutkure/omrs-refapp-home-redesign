@@ -3,7 +3,24 @@
     border-radius: 7px;
 }
 
+.navmir {
+    margin-bottom: 3%;
+}
+
+.alertmir {
+    margin-bottom: 3%;
+    max-width: 70%;
+}
+
 .cards {
     max-width: 70%;
-    margin-top: 100px;
+}
+
+.icon {
+    padding: 5%;
+}
+
+.navico {
+    padding-right: 5%;
+    padding-left: 5%;
 }
