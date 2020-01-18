@@ -10,12 +10,156 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+
     <title>OpenMRS Ref App!</title>
+
+    <script src="https://kit.fontawesome.com/bfccdb94e4.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <h1>Hello, world!</h1>
 
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navmir roundednav">
+
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+            <img src="resources/omrs-logo.jpg" height="75px" width="auto">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Logo -->
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto" style="margin-right: 20px;">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-user fa-lg navico"></i>
+                        admin
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">My Account</a>
+                    </div>
+                </li>
+
+                <!-- Location Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-map-marker-alt fa-lg navico"></i>
+                        Registration Desk
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Impatient Ward</a>
+                        <a class="dropdown-item" href="#">Laboratory</a>
+                        <a class="dropdown-item" href="#">Pharmacy</a>
+                        <a class="dropdown-item" href="#">Isolation Ward</a>
+                        <a class="dropdown-item" href="#">Outpatient Clinic</a>
+                        <a class="dropdown-item" href="#">Registration Desk</a>
+                    </div>
+                </li>
+                <!-- Location Dropdown -->
+
+                <li class="nav-item" style="padding-right: 5px; padding-left: 5px;">
+                    <a class="nav-link" href="#" style="margin-right: 5px; margin-left: 5px;">Log Out
+                        <i class="fas fa-sign-out-alt fa-lg"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Nav Bar -->
+
+    <!-- Alert Box -->
+    <div class="alert alert-light container alertmir" role="alert">
+        Logged in as Super User () at Registration Desk.
+    </div>
+    <!-- Alert Box -->
+
+    <!-- Cards -->
+    <div class="container cards">
+
+        <div class="card-deck">
+            <div class="card text-center shadow p-3 mb-5 bg-white rounded">
+                <div class="card-body">
+                    <i class="fas fa-search fa-7x icon"></i>
+                    <h5 style="padding: 5%;">Search Patients</h5>
+                </div>
+            </div>
+
+            <div class="card text-center shadow p-3 mb-5 bg-white rounded">
+                <div class="card-body">
+                    <i class="fas fa-calendar-alt fa-7x icon"></i>
+                    <h5 style="padding: 5%;">Active Visits</h5>
+                </div>
+            </div>
+
+            <div class="card text-center shadow p-3 mb-5 bg-white rounded">
+                <div class="card-body">
+                    <i class="fas fa-user-plus fa-7x icon"></i>
+                    <h5 style="padding: 5%;">Register a Patient</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-deck">
+            <div class="card text-center shadow p-3 mb-5 bg-white rounded">
+                <div class="card-body">
+                    <i class="fas fa-procedures fa-7x icon"></i>
+                    <h5 style="padding: 5%;">Capture Vitals</h5>
+                </div>
+            </div>
+
+
+            <div class="card text-center shadow p-3 mb-5 bg-white rounded">
+                <div class="card-body">
+                    <i class="fas fa-calendar-check fa-7x icon"></i>
+                    <h5 style="padding: 5%;">Appointment Schedueling</h5>
+                </div>
+            </div>
+
+            <div class="card text-center shadow p-3 mb-5 bg-white rounded">
+                <div class="card-body">
+                    <i class="fas fa-notes-medical fa-7x icon"></i>
+                    <h5 style="padding: 5%;">Reports</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-deck">
+            <div class="card text-center shadow p-3 mb-5 bg-white rounded">
+                <div class="card-body">
+                    <i class="fas fa-database fa-7x icon" style="padding: 5%;"></i>
+                    <h5 style="padding: 5%;">Data Management</h5>
+                </div>
+            </div>
+
+            <div class="card text-center shadow p-3 mb-5 bg-white rounded">
+                <div class="card-body">
+                    <i class="fas fa-server fa-7x icon" style="padding: 5%;"></i>
+                    <h5 style="padding: 5%;">Configure Metadata</h5>
+                </div>
+            </div>
+
+            <div class="card text-center shadow p-3 mb-5 bg-white rounded">
+                <div class="card-body">
+                    <i class="fas fa-cogs fa-7x icon" style="padding: 5%;"></i>
+                    <h5 style="padding: 5%;">System Administration</h5>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Cards -->
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
